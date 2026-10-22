@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFDB4">
+  <meta name="description" content="Escolha seu grupo VIP do Poupa Club: achados e ofertas de cozinha e beleza no WhatsApp.">
+  <title>Poupa Club — Grupos VIP</title>
+  <link rel="icon" href="identidade%20visual/logo.jpeg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; --yellow: #FFFDB4; --indigo: #23003F; --orange: #F94500; --lilac: #BCACCE; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; background: var(--yellow); color: var(--indigo); font-family: 'DM Sans', sans-serif; }
+    .page { width: min(100%, 568px); margin-inline: auto; padding: 45px 38px 54px; }
+    .brand { position: relative; display: flex; align-items: center; width: 252px; height: 101px; margin: 0 auto; }
+    .brand-words { position: relative; z-index: 1; font-family: 'Bagel Fat One', 'Arial Black', sans-serif; font-size: 61px; font-weight: 400; line-height: .76; letter-spacing: -3px; transform: rotate(-2deg); }
+    .brand-words span { display: block; }
+    .brand-words span + span { margin-left: 14px; }
+    .brand-star { position: absolute; width: 100px; height: 108px; right: -2px; bottom: -2px; transform: rotate(9deg); }
+    .groups { display: grid; gap: 66px; padding: 0; margin: 75px 0 0; list-style: none; }
+    .group { position: relative; }
+    .group-button { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 100px; padding: 18px 25px; border: 0; border-radius: 100px; background: var(--indigo); color: var(--orange); font-family: 'Bagel Fat One', 'Arial Black', sans-serif; font-size: clamp(21px, 6.25vw, 42px); line-height: 1.12; text-decoration: none; text-align: center; white-space: nowrap; cursor: pointer; transition: transform 180ms ease, box-shadow 180ms ease; }
+    .group-button:hover { transform: translateY(-3px); box-shadow: 0 7px 0 rgb(35 0 63 / 12%); }
+    .group-button:active { transform: translateY(0); box-shadow: none; }
+    .group-button:focus-visible { outline: 4px solid var(--orange); outline-offset: 6px; }
+    .mascot { position: absolute; z-index: 1; width: 76px; height: 78px; left: -22px; bottom: -22px; pointer-events: none; transform: rotate(-10deg); transition: transform 180ms ease; }
+    .group:nth-child(2) .mascot { width: 69px; left: -16px; bottom: -23px; transform: rotate(8deg); }
+    .group:hover .mascot { transform: rotate(-3deg) translateY(-3px); }
+    .notice { min-height: 1.5em; margin: 38px 0 0; text-align: center; font-size: 14px; line-height: 1.5; }
+    .svg-library, .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    @media (max-width: 420px) {
+      .page { padding: 40px 26px 45px; }
+      .brand { transform: scale(.9); }
+      .groups { margin-top: 62px; gap: 55px; }
+      .group-button { min-height: 83px; padding-inline: 14px; }
+      .mascot { width: 64px; height: 68px; left: -18px; }
+      .group:nth-child(2) .mascot { width: 60px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- As artes abaixo usam os JPEGs originais; os recortes s?o feitos no navegador. -->
+      <filter id="remove-black" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
+        <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  8 8 8 0 -0.65"/>
+      </filter>
+      <clipPath id="logo-star-outline" clipPathUnits="userSpaceOnUse">
+        <path d="M443 475C466 360 505 196 592 196C675 191 720 340 769 486C870 429 1037 371 1083 435C1136 499 1031 608 939 699C1013 782 1105 874 1068 935C1032 991 882 921 782 880C726 994 661 1119 586 1116C503 1113 481 987 473 902C370 930 194 990 164 929C131 867 241 772 307 714C228 654 105 542 143 477C185 403 327 439 443 475Z"/>
+        <path d="M875 221C887 193 930 211 919 239L870 369C858 398 815 379 827 351Z M993 306C1018 286 1047 319 1022 340L950 395C926 414 901 379 926 360Z"/>
+      </clipPath>
+      <symbol id="brand-mascot" viewBox="120 185 990 940">
+        <image href="identidade%20visual/logo.jpeg" width="1254" height="1254" clip-path="url(#logo-star-outline)"/>
+      </symbol>
+      <symbol id="shopping-mascot" viewBox="995 525 535 465">
+        <image href="identidade%20visual/mascote.jpeg" width="1536" height="1024" filter="url(#remove-black)"/>
+      </symbol>
+      <symbol id="happy-mascot" viewBox="1040 40 465 465">
+        <image href="identidade%20visual/mascote.jpeg" width="1536" height="1024" filter="url(#remove-black)"/>
+      </symbol>
+    </defs>
+  </svg>
+  <main class="page">
+    <h1 class="brand" aria-label="Poupa Club">
+      <span class="brand-words" aria-hidden="true"><span>POUPA</span><span>CLUB</span></span>
+      <svg class="brand-star" aria-hidden="true" viewBox="0 0 130 140"><use href="#brand-mascot"/></svg>
+    </h1>
+    <h2 class="sr-only">Escolha seu grupo VIP de ofertas</h2>
+    <ul class="groups">
+      <li class="group">
+        <a class="group-button" id="cozinha" href="#cozinha" data-group="cozinha">GRUPO VIP COZINHA</a>
+        <svg class="mascot" viewBox="0 0 150 150" aria-hidden="true"><use href="#shopping-mascot"/></svg>
+      </li>
+      <li class="group">
+        <a class="group-button" id="beleza" href="#beleza" data-group="beleza">GRUPO VIP BELEZA</a>
+        <svg class="mascot" viewBox="0 0 150 150" aria-hidden="true"><use href="#happy-mascot"/></svg>
+      </li>
+    </ul>
+    <p class="notice" role="status" aria-live="polite"></p>
+  </main>
+  <script>
+    // Cole os convites oficiais dos grupos entre as aspas abaixo.
+    const groupLinks = {
+      cozinha: 'https://chat.whatsapp.com/GBjNQotbAPf7GyBWPjuaw2',
+      beleza: ''
+    };
+    document.querySelectorAll('[data-group]').forEach(link => {
+      const url = groupLinks[link.dataset.group];
+      if (url) {
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      } else {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          document.querySelector('.notice').textContent = 'O convite deste grupo estará disponível em breve.';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
